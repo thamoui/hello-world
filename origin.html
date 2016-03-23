@@ -1,4 +1,4 @@
-<!DOCTYPE html3>
+<!DOCTYPE html>
 
 <head>
   <title>Bootstrap Example</title>
@@ -57,12 +57,13 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  background-color: #777;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
     height: 500px;
-  //background-color: #777;
+    background-color: #777;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -145,31 +146,42 @@ body {
   }
 }
 .deg30{
-    
+
     padding-bottom: 35px;
     padding-top: 35px;
 }
 .img-thumbnail{
-    
+
     height:140px;
 }
 .img-rounded{
-    
+
     height:140px;
 }
-    
+
+.row{
+    background-color: gray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.col-lg-3{
+    border-left-style: solid;
+    border-width: 1px;
+}
+
 </style>
 
 <!-- NAVBAR
 ================================================== -->
   <body>
-    
+
 ​
 ​
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        
+
         <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -265,24 +277,30 @@ body {
 ​
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="tigre.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p class="deg30" style ="transform: rotate(-30deg)">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-rounded" src="tigre.jpg" alt="Generic placeholder image" width="140" height="140">
+        <div class="col-lg-3">
+          <img class="img-circle" src="http://gifdrole.com/sonic/bv000031.gif" alt="Generic placeholder image" width="140" height="140">
+          <h2>Task Management</h2>
+          <p class="deg30" style ="transform: rotate(0deg)">Stay organized with an advanced  list and track your project.</p>
+
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <img class="img-rounded" src="http://gifdrole.com/sonic/bv000030.gif" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
           <p class="deg30">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-thumbnail" src="tigre.jpg" alt="Generic placeholder image" width="140" height="140">
+
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <img class="img-thumbnail" src="http://gifdrole.com/sonic/bv000033.gif" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
-          <p class="deg30" style="transform: rotate(30deg);">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a  class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+          <p class="deg30" style="transform: rotate(0deg);">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <img class="img-thumbnail" src="http://gifdrole.com/sonic/bv000034.gif" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p class="deg30" style="transform: rotate(0deg);">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+        </div><!-- /.col-lg-3 -->
       </div><!-- /.row -->
 ​
 ​
@@ -320,7 +338,7 @@ body {
           <blockquote>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           <small class="pull-right">Simplon Pomo 5</small>
-          
+
           </blockquote>
         </div>
         <div class="col-md-5">
@@ -335,6 +353,20 @@ body {
 
       <!-- FOOTER -->
       <footer>
+      <div class="ui compact menu">
+        <div class="ui simple dropdown item">
+          Dropdown
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">Choice 1</div>
+            <div class="item">Choice 2</div>
+            <div class="item">Choice 3</div>
+          </div>
+        </div>
+        </div>
+
+
+
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
